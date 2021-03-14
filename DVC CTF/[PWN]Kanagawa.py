@@ -7,7 +7,7 @@ void recovery_mode(void)
   system("cat  ./flag");
   return;
 }
-#Okay so the goal will be to call. If we sent 40 a to the binary, we receive a segmentation fault. 
+#Okay so the goal will be to call it. If we sent 40 a to the binary, we receive a segmentation fault. 
 #We use nm to find the adress of recovery mode
 # nm kanagawa | grep reco
 #result : 0804851b recovery_mode
