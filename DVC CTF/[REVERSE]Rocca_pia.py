@@ -87,4 +87,6 @@ print(s.model())
  arr[15] = 49,
  arr[13] = 115,
  arr[17] = 109]
-# And we convert the int answer to text
+# And we convert the int answer ( 100 118 67 84 70 123 73 95 108 49 107 51 95 115 119 49 109 109 49 110 103 115 125 ) to text with an online tool
+# like https://www.browserling.com/tools/decimal-to-text
+# and it gives us dvCTF{I_l1k3_sw1mm1ngs}
