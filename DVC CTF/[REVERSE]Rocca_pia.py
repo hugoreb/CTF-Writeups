@@ -64,5 +64,27 @@ for i in conditions:
 print(s.check())
 print(s.model())
 
-
-# And we convert the hex answer to text 
+# result :
+[arr[2] = 67,
+ arr[5] = 123,
+ arr[6] = 73,
+ arr[8] = 108,
+ arr[9] = 49,
+ arr[14] = 119,
+ arr[4] = 70,
+ arr[0] = 100,
+ arr[16] = 109,
+ arr[18] = 49,
+ arr[3] = 84,
+ arr[11] = 51,
+ arr[20] = 103,
+ arr[10] = 107,
+ arr[7] = 95,
+ arr[19] = 110,
+ arr[12] = 95,
+ arr[21] = 125,
+ arr[1] = 118,
+ arr[15] = 49,
+ arr[13] = 115,
+ arr[17] = 109]
+# And we convert the int answer to text
