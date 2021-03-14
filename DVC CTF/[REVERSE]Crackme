@@ -1,0 +1,32 @@
+This challenge was the second challenge of Reverse of the Da Vinci Code CTF. Giving a string to the binary returned a sort of md5 hash but not totally
+
+Example :
+./crackme a
+61267769e299c331a8b6f1c0b975c10cNice try
+
+And this hashed value was compared with d2862c3379cbf547d317b3b1771a4fb6
+
+So, i tryed (without really reading what the binary do) to modify hex code of the binary to pass the condition comparing the hash of the input and d2862c3379cbf547d317b3b1771a4fb6 , but it just gave 
+Well done! flag: dvCTF{a}
+
+So i decided to disassemble with Ghidra
+
+printf("Well done! flag: dvCTF{%s}\n",param_2[1])
+
+So the only way to have the flag is to find what string - once encoded - gives d2862c3379cbf547d317b3b1771a4fb6
+For that, I tryed to hash in md5 a and compared to the result of the binary
+Resultat of the binary with 'a' in input:
+61267769e299c331a8b6f1c0b975c10c
+MD5 hash of 'a' :
+0cc175b9c0f1b6a831c399e269772661
+
+I saw that las byte of the binary were 0c, like the first of the md5 of a .. so I reversed the md5 d2862c3379cbf547d317b3b1771a4fb6
+from 
+d2862c3379cbf547d317b3b1771a4fb6
+giving
+b64f1a77b1b317d347f5cb79332c86d2
+the md5 reverse of it was
+741852963
+
+Giving 741852963 to the binary :
+Well done! flag: dvCTF{741852963}
