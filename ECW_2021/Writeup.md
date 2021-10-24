@@ -11,7 +11,7 @@ First, this challenge is a rust one where the entire code has been placed in the
 
 I won’t use the rust code given for this writeup, I’ll only use the binary given. 
 
-A libc were given with the challenge. To link the binary to her, I used patchelf .
+To link the binary to the given libc, I used patchelf .
 
 
 $ checksec pack/challenge
