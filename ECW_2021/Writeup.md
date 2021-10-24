@@ -85,7 +85,7 @@ address + 0x32 : address
 
 But we have to get better understand of what’s happening. To do so, let’s open an other terminal and run 
 
-$ gdb attack `pidof challenge`
+$ gdb attack \`pidof challenge\`
 
 gdb will help us building our exploit.
 
