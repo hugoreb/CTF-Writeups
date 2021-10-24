@@ -46,7 +46,7 @@ Successfully added patient
 4. Remove patient
 5. View hospital
 6. Exit
-> 3
+3
 Patient index : 
 0
 Enter new name : 
@@ -58,7 +58,7 @@ Successfully modified patient
 4. Remove patient
 5. View hospital
 6. Exit
-> 5
+5
 Patient #0 : ��PB
 1. Add patient
 2. View patient
